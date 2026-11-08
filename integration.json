@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "d1957faa8689a9285643b2681aac6e15b0772132bf3cc5a73130e324ef27938c",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://api.coassemble.com/api/docs/json"
+  ],
+  "id": "academy-by-coassemble-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Academy by Coassemble MCP setup and connection checker",
+  "description": "Generate Academy by Coassemble MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "academy-by-coassemble",
+  "appName": "Academy by Coassemble",
+  "providerDocs": "https://api.coassemble.com/api/docs/json",
+  "providerWebsite": "https://coassemble.com/",
+  "authentication": {
+    "type": "custom_headers",
+    "requiredCredentialFields": [
+      "provider_header_credentials"
+    ],
+    "requiredHeaderNames": [
+      "Authorization"
+    ],
+    "helpUrl": "https://developers.coassemble.com/get-started",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-academy-by-coassemble-mcp"
+}
