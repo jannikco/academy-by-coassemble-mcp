@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-academy-by-coassemble",
+      "description": "Connect AI agents to Academy by Coassemble using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-academy-by-coassemble/SKILL.md": "b1cdb908380ead212c8c291428fe42ec48f135c3680b81a0e22c2f52ee7b3341"
+  }
+}

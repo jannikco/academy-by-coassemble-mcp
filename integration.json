@@ -1,39 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "d1957faa8689a9285643b2681aac6e15b0772132bf3cc5a73130e324ef27938c",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://api.coassemble.com/api/docs/json"
-  ],
   "id": "academy-by-coassemble-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Academy by Coassemble MCP setup and connection checker",
-  "description": "Generate Academy by Coassemble MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Academy by Coassemble for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-academy-by-coassemble-mcp",
+  "sourceRevision": "7986a282e93de5d072fff3b6bb99203961cd13805ee2465cf64f5c25b5c25c14",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://api.coassemble.com/api/docs/json"
+  ],
+  "utility": {
+    "problem": "Prepare Academy by Coassemble and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "academy-by-coassemble",
   "appName": "Academy by Coassemble",
-  "providerDocs": "https://api.coassemble.com/api/docs/json",
-  "providerWebsite": "https://coassemble.com/",
-  "authentication": {
-    "type": "custom_headers",
-    "requiredCredentialFields": [
-      "provider_header_credentials"
-    ],
-    "requiredHeaderNames": [
-      "Authorization"
-    ],
-    "helpUrl": "https://developers.coassemble.com/get-started",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-academy-by-coassemble-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }
